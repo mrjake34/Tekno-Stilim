@@ -17,7 +17,7 @@ struct ProductDetailView: View {
                 DetailView(product: product)
             })
             Spacer()
-        }.ignoresSafeArea()
+		}.navigationTitle(product?.name ?? "")
     }
 }
 

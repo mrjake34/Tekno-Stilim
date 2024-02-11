@@ -30,7 +30,6 @@ struct ProductList: View {
         GridItem(.flexible(), spacing: 1),
         GridItem(.flexible(), spacing: 1)
     ]
-    
     private let width = (UIScreen.main.bounds.width / 2) - 16
     var body: some View {
         if ((productViewModel.data?.products?.isEmpty
