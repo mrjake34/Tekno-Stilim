@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct ProductDetailView: View {
-    var product: Product?
+    var product: Product
     var body: some View {
         VStack() {
             VStack(spacing: 0, content: {
@@ -17,7 +17,7 @@ struct ProductDetailView: View {
                 DetailView(product: product)
             })
             Spacer()
-		}.navigationTitle(product?.name ?? "")
+		}.navigationTitle(product.name ?? "")
     }
 }
 
@@ -28,23 +28,23 @@ struct ProductDetailView: View {
 }
 
 struct ImageView: View {
-    var product: Product?
+    var product: Product
     var body: some View {
-        KFImage(URL(string: product?.image ?? "")).resizable()
+        KFImage(URL(string: product.image ?? "")).resizable()
             .foregroundColor(.gray)
             .scaledToFit()
     }
 }
 
 struct DetailView: View {
-    var product: Product?
+    var product: Product
     var body: some View {
         VStack(alignment: .leading, spacing: 5.0) {
-            Text("Name: \(product?.name ?? "")")
+            Text("Name: \(product.name ?? "")")
                 .font(.headline)
-            Text("Brand: \(product?.brand ?? "")")
-            Text("Category: \(product?.category ?? "")")
-            Text("Price: \(product?.price?.formatted() ?? "")")
+            Text("Brand: \(product.brand ?? "")")
+            Text("Category: \(product.category ?? "")")
+            Text("Price: \(product.price?.formatted() ?? "")")
         }
     }
 }
