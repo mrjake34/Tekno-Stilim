@@ -21,6 +21,7 @@
 		9476A88A2B79172F008452AD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A8892B79172F008452AD /* FirebaseStorage */; };
 		9476A88E2B791753008452AD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A88D2B791753008452AD /* Alamofire */; };
 		9476A8932B791814008452AD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8922B791814008452AD /* DummyData.swift */; };
+		9476A8962B791929008452AD /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8952B791929008452AD /* BaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9476A8712B79161F008452AD /* Tekno_StilimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimUITests.swift; sourceTree = "<group>"; };
 		9476A8732B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9476A8922B791814008452AD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		9476A8952B791929008452AD /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		9476A88F2B791771008452AD /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9476A8942B791905008452AD /* BaseModel */,
 				9476A8912B79177A008452AD /* Constants */,
 			);
 			path = Base;
@@ -166,6 +169,14 @@
 				9476A8922B791814008452AD /* DummyData.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		9476A8942B791905008452AD /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8952B791929008452AD /* BaseModel.swift */,
+			);
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +324,7 @@
 			files = (
 				9476A8932B791814008452AD /* DummyData.swift in Sources */,
 				9476A8512B79161E008452AD /* Tekno_StilimApp.swift in Sources */,
+				9476A8962B791929008452AD /* BaseModel.swift in Sources */,
 				9476A8562B79161E008452AD /* Tekno_Stilim.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
