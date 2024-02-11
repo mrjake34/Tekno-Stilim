@@ -10,22 +10,30 @@ import Combine
 
 class ProductViewModel: ObservableObject {
     
-    init(service: IProductService) {
+	init(service: IProductService) {
         self.service = service
-        setProducts()
+		Task {
+			try await setProducts()
+		}
     }
-    
     @Published var data: Products?
-    @Published var isSuccess: Bool?
+	@Published var errorMessage: String?
     
     private let service: IProductService
     
-    func setProducts() {
-        Task {
-            service.fetchProducts() { (data) in
-                self.data = data
-            }
-        }
+    func setProducts() async throws -> Void {
+        let response = try await service.fetchProducts()
+		
+		guard let rsp = response else {
+			return
+		}
+		
+		guard let data = rsp.data else {
+			self.errorMessage = response?.error
+			return
+		}
+		self.data = data
+		
     }
 }
 

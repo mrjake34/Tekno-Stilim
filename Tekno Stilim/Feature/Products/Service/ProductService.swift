@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 protocol IProductService {
-    func fetchProducts(completion: @escaping (Products?) -> Void)
+	func fetchProducts() async throws -> BaseResponseModel<Products>?
 }
 
 class ProductService: IProductService {
@@ -21,9 +21,7 @@ class ProductService: IProductService {
         self.serviceManager = ServiceManager()
     }
     
-    func fetchProducts(completion: @escaping (Products?) -> Void) {
-        serviceManager?.request(baseUrl: baseUrl, model: Products.self) {data in
-            completion(data)
-        }
+	func fetchProducts() async throws -> BaseResponseModel<Products>? {
+		return try await serviceManager?.request(baseUrl: baseUrl, model: Products.self)
     }
 }
