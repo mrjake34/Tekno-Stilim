@@ -32,7 +32,6 @@
 		9476A8B22B791D45008452AD /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8B12B791D45008452AD /* ProductView.swift */; };
 		9476A8B42B791D60008452AD /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8B32B791D60008452AD /* ProductDetailView.swift */; };
 		9476A8B82B7928B3008452AD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A8B72B7928B3008452AD /* Kingfisher */; };
-		94A6EB3E2B79299700B66C82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A6EB3D2B79299600B66C82 /* GoogleService-Info.plist */; };
 		94A6EB412B792A0C00B66C82 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB402B792A0C00B66C82 /* LoginModel.swift */; };
 		94A6EB442B792A7200B66C82 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB432B792A7200B66C82 /* AuthViewModel.swift */; };
 		94A6EB492B793EF900B66C82 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 94A6EB482B793EF900B66C82 /* FirebaseAnalyticsSwift */; };
@@ -80,7 +79,6 @@
 		9476A8AF2B791D30008452AD /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		9476A8B12B791D45008452AD /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		9476A8B32B791D60008452AD /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
-		94A6EB3D2B79299600B66C82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94A6EB402B792A0C00B66C82 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		94A6EB432B792A7200B66C82 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		94A6EB4C2B7955B800B66C82 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 		9476A84F2B79161E008452AD /* Tekno Stilim */ = {
 			isa = PBXGroup;
 			children = (
-				94A6EB3D2B79299600B66C82 /* GoogleService-Info.plist */,
 				9476A8902B791775008452AD /* Feature */,
 				9476A88F2B791771008452AD /* Base */,
 				9476A8502B79161E008452AD /* Tekno_StilimApp.swift */,
@@ -458,7 +455,6 @@
 			files = (
 				9476A85E2B79161F008452AD /* Preview Assets.xcassets in Resources */,
 				9476A85A2B79161F008452AD /* Assets.xcassets in Resources */,
-				94A6EB3E2B79299700B66C82 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
