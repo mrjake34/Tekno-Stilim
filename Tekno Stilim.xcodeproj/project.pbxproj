@@ -22,6 +22,8 @@
 		9476A88E2B791753008452AD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A88D2B791753008452AD /* Alamofire */; };
 		9476A8932B791814008452AD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8922B791814008452AD /* DummyData.swift */; };
 		9476A8962B791929008452AD /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8952B791929008452AD /* BaseModel.swift */; };
+		9476A89A2B791AA7008452AD /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8992B791AA7008452AD /* TabBarView.swift */; };
+		9476A89D2B791ADC008452AD /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A89C2B791ADC008452AD /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		9476A8732B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9476A8922B791814008452AD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		9476A8952B791929008452AD /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		9476A8992B791AA7008452AD /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		9476A89C2B791ADC008452AD /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +154,10 @@
 		9476A88F2B791771008452AD /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9476A89B2B791ABA008452AD /* Service */,
+				9476A8972B791A74008452AD /* Views */,
 				9476A8942B791905008452AD /* BaseModel */,
-				9476A8912B79177A008452AD /* Constants */,
+				9476A8912B79177A008452AD /* Data */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -163,12 +169,12 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		9476A8912B79177A008452AD /* Constants */ = {
+		9476A8912B79177A008452AD /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				9476A8922B791814008452AD /* DummyData.swift */,
 			);
-			path = Constants;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		9476A8942B791905008452AD /* BaseModel */ = {
@@ -177,6 +183,30 @@
 				9476A8952B791929008452AD /* BaseModel.swift */,
 			);
 			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		9476A8972B791A74008452AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8982B791A85008452AD /* TabView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9476A8982B791A85008452AD /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8992B791AA7008452AD /* TabBarView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		9476A89B2B791ABA008452AD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9476A89C2B791ADC008452AD /* ServiceManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +355,9 @@
 				9476A8932B791814008452AD /* DummyData.swift in Sources */,
 				9476A8512B79161E008452AD /* Tekno_StilimApp.swift in Sources */,
 				9476A8962B791929008452AD /* BaseModel.swift in Sources */,
+				9476A89A2B791AA7008452AD /* TabBarView.swift in Sources */,
 				9476A8562B79161E008452AD /* Tekno_Stilim.xcdatamodeld in Sources */,
+				9476A89D2B791ADC008452AD /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
