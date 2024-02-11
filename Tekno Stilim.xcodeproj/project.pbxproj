@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		9476A8512B79161E008452AD /* Tekno_StilimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8502B79161E008452AD /* Tekno_StilimApp.swift */; };
-		9476A8532B79161E008452AD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8522B79161E008452AD /* Persistence.swift */; };
 		9476A8562B79161E008452AD /* Tekno_Stilim.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8542B79161E008452AD /* Tekno_Stilim.xcdatamodeld */; };
-		9476A8582B79161E008452AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8572B79161E008452AD /* ContentView.swift */; };
 		9476A85A2B79161F008452AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9476A8592B79161F008452AD /* Assets.xcassets */; };
 		9476A85E2B79161F008452AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9476A85D2B79161F008452AD /* Preview Assets.xcassets */; };
 		9476A8682B79161F008452AD /* Tekno_StilimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8672B79161F008452AD /* Tekno_StilimTests.swift */; };
 		9476A8722B79161F008452AD /* Tekno_StilimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8712B79161F008452AD /* Tekno_StilimUITests.swift */; };
 		9476A8742B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8732B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift */; };
+		9476A8822B79172F008452AD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A8812B79172F008452AD /* FirebaseAnalytics */; };
+		9476A8842B79172F008452AD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A8832B79172F008452AD /* FirebaseAuth */; };
+		9476A8862B79172F008452AD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A8852B79172F008452AD /* FirebaseFirestore */; };
+		9476A8882B79172F008452AD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A8872B79172F008452AD /* FirebaseMessaging */; };
+		9476A88A2B79172F008452AD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A8892B79172F008452AD /* FirebaseStorage */; };
+		9476A88E2B791753008452AD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9476A88D2B791753008452AD /* Alamofire */; };
+		9476A8932B791814008452AD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8922B791814008452AD /* DummyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +43,7 @@
 /* Begin PBXFileReference section */
 		9476A84D2B79161E008452AD /* Tekno Stilim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tekno Stilim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9476A8502B79161E008452AD /* Tekno_StilimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimApp.swift; sourceTree = "<group>"; };
-		9476A8522B79161E008452AD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9476A8552B79161E008452AD /* Tekno_Stilim.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tekno_Stilim.xcdatamodel; sourceTree = "<group>"; };
-		9476A8572B79161E008452AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9476A8592B79161F008452AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9476A85B2B79161F008452AD /* Tekno_Stilim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tekno_Stilim.entitlements; sourceTree = "<group>"; };
 		9476A85D2B79161F008452AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		9476A86D2B79161F008452AD /* Tekno StilimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tekno StilimUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9476A8712B79161F008452AD /* Tekno_StilimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimUITests.swift; sourceTree = "<group>"; };
 		9476A8732B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9476A8922B791814008452AD /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9476A8882B79172F008452AD /* FirebaseMessaging in Frameworks */,
+				9476A8822B79172F008452AD /* FirebaseAnalytics in Frameworks */,
+				9476A8842B79172F008452AD /* FirebaseAuth in Frameworks */,
+				9476A88E2B791753008452AD /* Alamofire in Frameworks */,
+				9476A88A2B79172F008452AD /* FirebaseStorage in Frameworks */,
+				9476A8862B79172F008452AD /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +109,9 @@
 		9476A84F2B79161E008452AD /* Tekno Stilim */ = {
 			isa = PBXGroup;
 			children = (
+				9476A8902B791775008452AD /* Feature */,
+				9476A88F2B791771008452AD /* Base */,
 				9476A8502B79161E008452AD /* Tekno_StilimApp.swift */,
-				9476A8522B79161E008452AD /* Persistence.swift */,
-				9476A8572B79161E008452AD /* ContentView.swift */,
 				9476A8592B79161F008452AD /* Assets.xcassets */,
 				9476A85B2B79161F008452AD /* Tekno_Stilim.entitlements */,
 				9476A8542B79161E008452AD /* Tekno_Stilim.xcdatamodeld */,
@@ -135,6 +145,29 @@
 			path = "Tekno StilimUITests";
 			sourceTree = "<group>";
 		};
+		9476A88F2B791771008452AD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8912B79177A008452AD /* Constants */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9476A8902B791775008452AD /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		9476A8912B79177A008452AD /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8922B791814008452AD /* DummyData.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +184,14 @@
 			dependencies = (
 			);
 			name = "Tekno Stilim";
+			packageProductDependencies = (
+				9476A8812B79172F008452AD /* FirebaseAnalytics */,
+				9476A8832B79172F008452AD /* FirebaseAuth */,
+				9476A8852B79172F008452AD /* FirebaseFirestore */,
+				9476A8872B79172F008452AD /* FirebaseMessaging */,
+				9476A8892B79172F008452AD /* FirebaseStorage */,
+				9476A88D2B791753008452AD /* Alamofire */,
+			);
 			productName = "Tekno Stilim";
 			productReference = 9476A84D2B79161E008452AD /* Tekno Stilim.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +264,11 @@
 				Base,
 			);
 			mainGroup = 9476A8442B79161E008452AD;
+			packageReferences = (
+				9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				9476A88B2B791742008452AD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9476A88C2B791753008452AD /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9476A84E2B79161E008452AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,9 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9476A8932B791814008452AD /* DummyData.swift in Sources */,
 				9476A8512B79161E008452AD /* Tekno_StilimApp.swift in Sources */,
-				9476A8532B79161E008452AD /* Persistence.swift in Sources */,
-				9476A8582B79161E008452AD /* ContentView.swift in Sources */,
 				9476A8562B79161E008452AD /* Tekno_Stilim.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,6 +670,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+		9476A88B2B791742008452AD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.2;
+			};
+		};
+		9476A88C2B791753008452AD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9476A8812B79172F008452AD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		9476A8832B79172F008452AD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9476A8852B79172F008452AD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9476A8872B79172F008452AD /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		9476A8892B79172F008452AD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		9476A88D2B791753008452AD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9476A88C2B791753008452AD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9476A8542B79161E008452AD /* Tekno_Stilim.xcdatamodeld */ = {
