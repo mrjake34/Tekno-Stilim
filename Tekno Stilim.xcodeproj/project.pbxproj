@@ -24,6 +24,13 @@
 		9476A8962B791929008452AD /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8952B791929008452AD /* BaseModel.swift */; };
 		9476A89A2B791AA7008452AD /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8992B791AA7008452AD /* TabBarView.swift */; };
 		9476A89D2B791ADC008452AD /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A89C2B791ADC008452AD /* ServiceManager.swift */; };
+		9476A8A12B791C5E008452AD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8A02B791C5E008452AD /* HomeView.swift */; };
+		9476A8A52B791C9E008452AD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8A42B791C9E008452AD /* LoginView.swift */; };
+		9476A8AC2B791CFA008452AD /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8AB2B791CFA008452AD /* ProductModel.swift */; };
+		9476A8AE2B791D0F008452AD /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8AD2B791D0F008452AD /* ProductService.swift */; };
+		9476A8B02B791D30008452AD /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8AF2B791D30008452AD /* ProductViewModel.swift */; };
+		9476A8B22B791D45008452AD /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8B12B791D45008452AD /* ProductView.swift */; };
+		9476A8B42B791D60008452AD /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8B32B791D60008452AD /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		9476A8952B791929008452AD /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		9476A8992B791AA7008452AD /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		9476A89C2B791ADC008452AD /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		9476A8A02B791C5E008452AD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9476A8A42B791C9E008452AD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9476A8AB2B791CFA008452AD /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		9476A8AD2B791D0F008452AD /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		9476A8AF2B791D30008452AD /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		9476A8B12B791D45008452AD /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		9476A8B32B791D60008452AD /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +179,9 @@
 		9476A8902B791775008452AD /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				9476A8A62B791CBB008452AD /* Products */,
+				9476A8A22B791C76008452AD /* Login */,
+				9476A89E2B791C46008452AD /* Home */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -207,6 +224,82 @@
 				9476A89C2B791ADC008452AD /* ServiceManager.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		9476A89E2B791C46008452AD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9476A89F2B791C4E008452AD /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9476A89F2B791C4E008452AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8A02B791C5E008452AD /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9476A8A22B791C76008452AD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8A32B791C80008452AD /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9476A8A32B791C80008452AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8A42B791C9E008452AD /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9476A8A62B791CBB008452AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8AA2B791CE1008452AD /* View */,
+				9476A8A92B791CDB008452AD /* ViewModel */,
+				9476A8A82B791CD6008452AD /* Service */,
+				9476A8A72B791CD1008452AD /* Model */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		9476A8A72B791CD1008452AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8AB2B791CFA008452AD /* ProductModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9476A8A82B791CD6008452AD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8AD2B791D0F008452AD /* ProductService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9476A8A92B791CDB008452AD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8AF2B791D30008452AD /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9476A8AA2B791CE1008452AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8B12B791D45008452AD /* ProductView.swift */,
+				9476A8B32B791D60008452AD /* ProductDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,11 +446,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9476A8932B791814008452AD /* DummyData.swift in Sources */,
+				9476A8A12B791C5E008452AD /* HomeView.swift in Sources */,
 				9476A8512B79161E008452AD /* Tekno_StilimApp.swift in Sources */,
 				9476A8962B791929008452AD /* BaseModel.swift in Sources */,
+				9476A8B22B791D45008452AD /* ProductView.swift in Sources */,
+				9476A8AC2B791CFA008452AD /* ProductModel.swift in Sources */,
 				9476A89A2B791AA7008452AD /* TabBarView.swift in Sources */,
+				9476A8B02B791D30008452AD /* ProductViewModel.swift in Sources */,
 				9476A8562B79161E008452AD /* Tekno_Stilim.xcdatamodeld in Sources */,
+				9476A8A52B791C9E008452AD /* LoginView.swift in Sources */,
+				9476A8B42B791D60008452AD /* ProductDetailView.swift in Sources */,
 				9476A89D2B791ADC008452AD /* ServiceManager.swift in Sources */,
+				9476A8AE2B791D0F008452AD /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
