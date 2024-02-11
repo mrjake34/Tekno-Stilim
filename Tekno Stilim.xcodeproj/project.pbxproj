@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9476A8512B79161E008452AD /* Tekno_StilimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8502B79161E008452AD /* Tekno_StilimApp.swift */; };
+		9476A8532B79161E008452AD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8522B79161E008452AD /* Persistence.swift */; };
+		9476A8562B79161E008452AD /* Tekno_Stilim.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8542B79161E008452AD /* Tekno_Stilim.xcdatamodeld */; };
+		9476A8582B79161E008452AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8572B79161E008452AD /* ContentView.swift */; };
+		9476A85A2B79161F008452AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9476A8592B79161F008452AD /* Assets.xcassets */; };
+		9476A85E2B79161F008452AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9476A85D2B79161F008452AD /* Preview Assets.xcassets */; };
+		9476A8682B79161F008452AD /* Tekno_StilimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8672B79161F008452AD /* Tekno_StilimTests.swift */; };
+		9476A8722B79161F008452AD /* Tekno_StilimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8712B79161F008452AD /* Tekno_StilimUITests.swift */; };
+		9476A8742B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476A8732B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9476A8642B79161F008452AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9476A8452B79161E008452AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9476A84C2B79161E008452AD;
+			remoteInfo = "Tekno Stilim";
+		};
+		9476A86E2B79161F008452AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9476A8452B79161E008452AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9476A84C2B79161E008452AD;
+			remoteInfo = "Tekno Stilim";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9476A84D2B79161E008452AD /* Tekno Stilim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tekno Stilim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9476A8502B79161E008452AD /* Tekno_StilimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimApp.swift; sourceTree = "<group>"; };
+		9476A8522B79161E008452AD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9476A8552B79161E008452AD /* Tekno_Stilim.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tekno_Stilim.xcdatamodel; sourceTree = "<group>"; };
+		9476A8572B79161E008452AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9476A8592B79161F008452AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9476A85B2B79161F008452AD /* Tekno_Stilim.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tekno_Stilim.entitlements; sourceTree = "<group>"; };
+		9476A85D2B79161F008452AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9476A8632B79161F008452AD /* Tekno StilimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tekno StilimTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9476A8672B79161F008452AD /* Tekno_StilimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimTests.swift; sourceTree = "<group>"; };
+		9476A86D2B79161F008452AD /* Tekno StilimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tekno StilimUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9476A8712B79161F008452AD /* Tekno_StilimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimUITests.swift; sourceTree = "<group>"; };
+		9476A8732B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tekno_StilimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9476A84A2B79161E008452AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9476A8602B79161F008452AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9476A86A2B79161F008452AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9476A8442B79161E008452AD = {
+			isa = PBXGroup;
+			children = (
+				9476A84F2B79161E008452AD /* Tekno Stilim */,
+				9476A8662B79161F008452AD /* Tekno StilimTests */,
+				9476A8702B79161F008452AD /* Tekno StilimUITests */,
+				9476A84E2B79161E008452AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9476A84E2B79161E008452AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9476A84D2B79161E008452AD /* Tekno Stilim.app */,
+				9476A8632B79161F008452AD /* Tekno StilimTests.xctest */,
+				9476A86D2B79161F008452AD /* Tekno StilimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9476A84F2B79161E008452AD /* Tekno Stilim */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8502B79161E008452AD /* Tekno_StilimApp.swift */,
+				9476A8522B79161E008452AD /* Persistence.swift */,
+				9476A8572B79161E008452AD /* ContentView.swift */,
+				9476A8592B79161F008452AD /* Assets.xcassets */,
+				9476A85B2B79161F008452AD /* Tekno_Stilim.entitlements */,
+				9476A8542B79161E008452AD /* Tekno_Stilim.xcdatamodeld */,
+				9476A85C2B79161F008452AD /* Preview Content */,
+			);
+			path = "Tekno Stilim";
+			sourceTree = "<group>";
+		};
+		9476A85C2B79161F008452AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9476A85D2B79161F008452AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9476A8662B79161F008452AD /* Tekno StilimTests */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8672B79161F008452AD /* Tekno_StilimTests.swift */,
+			);
+			path = "Tekno StilimTests";
+			sourceTree = "<group>";
+		};
+		9476A8702B79161F008452AD /* Tekno StilimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9476A8712B79161F008452AD /* Tekno_StilimUITests.swift */,
+				9476A8732B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift */,
+			);
+			path = "Tekno StilimUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9476A84C2B79161E008452AD /* Tekno Stilim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9476A8772B79161F008452AD /* Build configuration list for PBXNativeTarget "Tekno Stilim" */;
+			buildPhases = (
+				9476A8492B79161E008452AD /* Sources */,
+				9476A84A2B79161E008452AD /* Frameworks */,
+				9476A84B2B79161E008452AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tekno Stilim";
+			productName = "Tekno Stilim";
+			productReference = 9476A84D2B79161E008452AD /* Tekno Stilim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9476A8622B79161F008452AD /* Tekno StilimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9476A87A2B79161F008452AD /* Build configuration list for PBXNativeTarget "Tekno StilimTests" */;
+			buildPhases = (
+				9476A85F2B79161F008452AD /* Sources */,
+				9476A8602B79161F008452AD /* Frameworks */,
+				9476A8612B79161F008452AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9476A8652B79161F008452AD /* PBXTargetDependency */,
+			);
+			name = "Tekno StilimTests";
+			productName = "Tekno StilimTests";
+			productReference = 9476A8632B79161F008452AD /* Tekno StilimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9476A86C2B79161F008452AD /* Tekno StilimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9476A87D2B79161F008452AD /* Build configuration list for PBXNativeTarget "Tekno StilimUITests" */;
+			buildPhases = (
+				9476A8692B79161F008452AD /* Sources */,
+				9476A86A2B79161F008452AD /* Frameworks */,
+				9476A86B2B79161F008452AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9476A86F2B79161F008452AD /* PBXTargetDependency */,
+			);
+			name = "Tekno StilimUITests";
+			productName = "Tekno StilimUITests";
+			productReference = 9476A86D2B79161F008452AD /* Tekno StilimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9476A8452B79161E008452AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					9476A84C2B79161E008452AD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					9476A8622B79161F008452AD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 9476A84C2B79161E008452AD;
+					};
+					9476A86C2B79161F008452AD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 9476A84C2B79161E008452AD;
+					};
+				};
+			};
+			buildConfigurationList = 9476A8482B79161E008452AD /* Build configuration list for PBXProject "Tekno Stilim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9476A8442B79161E008452AD;
+			productRefGroup = 9476A84E2B79161E008452AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9476A84C2B79161E008452AD /* Tekno Stilim */,
+				9476A8622B79161F008452AD /* Tekno StilimTests */,
+				9476A86C2B79161F008452AD /* Tekno StilimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9476A84B2B79161E008452AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9476A85E2B79161F008452AD /* Preview Assets.xcassets in Resources */,
+				9476A85A2B79161F008452AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9476A8612B79161F008452AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9476A86B2B79161F008452AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9476A8492B79161E008452AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9476A8512B79161E008452AD /* Tekno_StilimApp.swift in Sources */,
+				9476A8532B79161E008452AD /* Persistence.swift in Sources */,
+				9476A8582B79161E008452AD /* ContentView.swift in Sources */,
+				9476A8562B79161E008452AD /* Tekno_Stilim.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9476A85F2B79161F008452AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9476A8682B79161F008452AD /* Tekno_StilimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9476A8692B79161F008452AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9476A8742B79161F008452AD /* Tekno_StilimUITestsLaunchTests.swift in Sources */,
+				9476A8722B79161F008452AD /* Tekno_StilimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9476A8652B79161F008452AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9476A84C2B79161E008452AD /* Tekno Stilim */;
+			targetProxy = 9476A8642B79161F008452AD /* PBXContainerItemProxy */;
+		};
+		9476A86F2B79161F008452AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9476A84C2B79161E008452AD /* Tekno Stilim */;
+			targetProxy = 9476A86E2B79161F008452AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9476A8752B79161F008452AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9476A8762B79161F008452AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		9476A8782B79161F008452AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tekno Stilim/Tekno_Stilim.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tekno Stilim/Preview Content\"";
+				DEVELOPMENT_TEAM = 8X8L7773UK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efestech.Tekno-Stilim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9476A8792B79161F008452AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tekno Stilim/Tekno_Stilim.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tekno Stilim/Preview Content\"";
+				DEVELOPMENT_TEAM = 8X8L7773UK;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efestech.Tekno-Stilim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9476A87B2B79161F008452AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X8L7773UK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efestech.Tekno-StilimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tekno Stilim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tekno Stilim";
+			};
+			name = Debug;
+		};
+		9476A87C2B79161F008452AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X8L7773UK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efestech.Tekno-StilimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tekno Stilim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tekno Stilim";
+			};
+			name = Release;
+		};
+		9476A87E2B79161F008452AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X8L7773UK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efestech.Tekno-StilimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tekno Stilim";
+			};
+			name = Debug;
+		};
+		9476A87F2B79161F008452AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8X8L7773UK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.efestech.Tekno-StilimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Tekno Stilim";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9476A8482B79161E008452AD /* Build configuration list for PBXProject "Tekno Stilim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9476A8752B79161F008452AD /* Debug */,
+				9476A8762B79161F008452AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9476A8772B79161F008452AD /* Build configuration list for PBXNativeTarget "Tekno Stilim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9476A8782B79161F008452AD /* Debug */,
+				9476A8792B79161F008452AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9476A87A2B79161F008452AD /* Build configuration list for PBXNativeTarget "Tekno StilimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9476A87B2B79161F008452AD /* Debug */,
+				9476A87C2B79161F008452AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9476A87D2B79161F008452AD /* Build configuration list for PBXNativeTarget "Tekno StilimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9476A87E2B79161F008452AD /* Debug */,
+				9476A87F2B79161F008452AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9476A8542B79161E008452AD /* Tekno_Stilim.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9476A8552B79161E008452AD /* Tekno_Stilim.xcdatamodel */,
+			);
+			currentVersion = 9476A8552B79161E008452AD /* Tekno_Stilim.xcdatamodel */;
+			path = Tekno_Stilim.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9476A8452B79161E008452AD /* Project object */;
+}
