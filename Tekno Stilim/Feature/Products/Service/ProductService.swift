@@ -1,5 +1,5 @@
 //
-//  PokemonService.swift
+//  ProductService.swift
 //  Tekno Stilim
 //
 //  Created by Alkan Ataş on 9.02.2024.
@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 protocol IProductService {
-	func fetchProducts() async throws -> BaseResponseModel<Products>?
+	func fetchProducts() async -> BaseResponseModel<Products>?
 }
 
 class ProductService: IProductService {
@@ -21,7 +21,7 @@ class ProductService: IProductService {
         self.serviceManager = ServiceManager()
     }
     
-	func fetchProducts() async throws -> BaseResponseModel<Products>? {
-		return try await serviceManager?.request(baseUrl: baseUrl, model: Products.self)
+	func fetchProducts() async -> BaseResponseModel<Products>? {
+		return await serviceManager?.request(baseUrl: baseUrl, model: Products.self)
     }
 }
