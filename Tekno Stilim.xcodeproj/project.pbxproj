@@ -37,6 +37,7 @@
 		94A6EB492B793EF900B66C82 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 94A6EB482B793EF900B66C82 /* FirebaseAnalyticsSwift */; };
 		94A6EB4B2B793EF900B66C82 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 94A6EB4A2B793EF900B66C82 /* FirebaseFirestoreSwift */; };
 		94A6EB4D2B7955B800B66C82 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB4C2B7955B800B66C82 /* BaseResponseModel.swift */; };
+		94A6EB512B7A259100B66C82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A6EB502B7A259100B66C82 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		94A6EB402B792A0C00B66C82 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		94A6EB432B792A7200B66C82 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		94A6EB4C2B7955B800B66C82 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		94A6EB502B7A259100B66C82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		9476A84F2B79161E008452AD /* Tekno Stilim */ = {
 			isa = PBXGroup;
 			children = (
+				94A6EB502B7A259100B66C82 /* GoogleService-Info.plist */,
 				9476A8902B791775008452AD /* Feature */,
 				9476A88F2B791771008452AD /* Base */,
 				9476A8502B79161E008452AD /* Tekno_StilimApp.swift */,
@@ -455,6 +458,7 @@
 			files = (
 				9476A85E2B79161F008452AD /* Preview Assets.xcassets in Resources */,
 				9476A85A2B79161F008452AD /* Assets.xcassets in Resources */,
+				94A6EB512B7A259100B66C82 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

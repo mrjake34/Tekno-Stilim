@@ -13,7 +13,7 @@ class ProductViewModel: ObservableObject {
 	init(service: IProductService) {
         self.service = service
 		Task {
-			try await setProducts()
+			await setProducts()
 		}
     }
     @Published var data: Products?
@@ -21,8 +21,8 @@ class ProductViewModel: ObservableObject {
     
     private let service: IProductService
     
-    func setProducts() async throws -> Void {
-        let response = try await service.fetchProducts()
+    func setProducts() async -> Void {
+        let response = await service.fetchProducts()
 		
 		guard let rsp = response else {
 			return
