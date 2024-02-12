@@ -9,11 +9,11 @@ import Foundation
 import Alamofire
 
 internal protocol IServiceManager {
-	func request<T: BaseModel>(baseUrl: String, model: T.Type) async -> BaseResponseModel<T>?
+	func request<T: BaseModel>(baseUrl: String, model: T.Type) async -> BaseResponseModel<T>
 }
 
 public final class ServiceManager: IServiceManager {
-	func request<T: BaseModel>(baseUrl: String, model: T.Type) async -> BaseResponseModel<T>? {
+	func request<T: BaseModel>(baseUrl: String, model: T.Type) async -> BaseResponseModel<T> {
 		let response = await AF.request(baseUrl)
 			.validate()
 			.serializingDecodable(T.self)
