@@ -17,8 +17,14 @@ struct LoginView: View {
 			VStack(alignment: .center, content: {
 				Spacer()
 				ZStack {
-					Image("logo").resizable().aspectRatio(contentMode: .fill).frame(width: 150, height: 150)
-					Circle().stroke(.white,lineWidth: 4).shadow(radius: 4).frame(width: 180, height: 180)
+					Image("logo")
+						.resizable()
+						.aspectRatio(contentMode: .fill)
+						.frame(width: 150, height: 150)
+					Circle()
+						.stroke(.white,lineWidth: 4)
+						.shadow(radius: 4)
+						.frame(width: 180, height: 180)
 				}
 				VStack(content: {
 					TextField("E-Mail", text: $email)
@@ -37,9 +43,12 @@ struct LoginView: View {
 
 				}).padding(20)
 				Spacer()
-				
+				NavigationLink("Do you have not an account?") {
+					RegisterView()
+				}
 			})
 			.padding(.all)
+				
 		}).navigationBarBackButtonHidden(true)
     }
 }

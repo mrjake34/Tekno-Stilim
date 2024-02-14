@@ -39,6 +39,12 @@
 		94A6EB4D2B7955B800B66C82 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB4C2B7955B800B66C82 /* BaseResponseModel.swift */; };
 		94A6EB512B7A259100B66C82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94A6EB502B7A259100B66C82 /* GoogleService-Info.plist */; };
 		94A6EB532B7A5CDB00B66C82 /* PublicVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB522B7A5CDB00B66C82 /* PublicVariables.swift */; };
+		94A6EB552B7AB35200B66C82 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB542B7AB35200B66C82 /* RegisterView.swift */; };
+		94A6EB582B7AB96E00B66C82 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB572B7AB96E00B66C82 /* InputTextView.swift */; };
+		94A6EB5A2B7ABB8D00B66C82 /* SecureInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB592B7ABB8D00B66C82 /* SecureInputTextView.swift */; };
+		94A6EB5C2B7ABC3E00B66C82 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB5B2B7ABC3E00B66C82 /* RegisterModel.swift */; };
+		94A6EB602B7AC28C00B66C82 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A6EB5F2B7AC28C00B66C82 /* UserModel.swift */; };
+		94A6EB622B7AC40F00B66C82 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 94A6EB612B7AC40F00B66C82 /* FirebaseFirestoreCombine-Community */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,11 @@
 		94A6EB4C2B7955B800B66C82 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
 		94A6EB502B7A259100B66C82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94A6EB522B7A5CDB00B66C82 /* PublicVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicVariables.swift; sourceTree = "<group>"; };
+		94A6EB542B7AB35200B66C82 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		94A6EB572B7AB96E00B66C82 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		94A6EB592B7ABB8D00B66C82 /* SecureInputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureInputTextView.swift; sourceTree = "<group>"; };
+		94A6EB5B2B7ABC3E00B66C82 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		94A6EB5F2B7AC28C00B66C82 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +107,7 @@
 				9476A8882B79172F008452AD /* FirebaseMessaging in Frameworks */,
 				9476A8822B79172F008452AD /* FirebaseAnalytics in Frameworks */,
 				9476A8B82B7928B3008452AD /* Kingfisher in Frameworks */,
+				94A6EB622B7AC40F00B66C82 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				9476A8842B79172F008452AD /* FirebaseAuth in Frameworks */,
 				94A6EB492B793EF900B66C82 /* FirebaseAnalyticsSwift in Frameworks */,
 				9476A88E2B791753008452AD /* Alamofire in Frameworks */,
@@ -186,7 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				9476A89B2B791ABA008452AD /* Service */,
-				9476A8972B791A74008452AD /* Views */,
+				9476A8972B791A74008452AD /* Components */,
 				9476A8942B791905008452AD /* BaseModel */,
 				9476A8912B79177A008452AD /* Data */,
 			);
@@ -196,6 +208,7 @@
 		9476A8902B791775008452AD /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				94A6EB5D2B7AC27500B66C82 /* Profile */,
 				9476A8A62B791CBB008452AD /* Products */,
 				9476A8A22B791C76008452AD /* Auth */,
 				9476A89E2B791C46008452AD /* Home */,
@@ -221,12 +234,13 @@
 			path = BaseModel;
 			sourceTree = "<group>";
 		};
-		9476A8972B791A74008452AD /* Views */ = {
+		9476A8972B791A74008452AD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				94A6EB562B7AB94D00B66C82 /* InputFields */,
 				9476A8982B791A85008452AD /* TabView */,
 			);
-			path = Views;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		9476A8982B791A85008452AD /* TabView */ = {
@@ -275,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				9476A8A42B791C9E008452AD /* LoginView.swift */,
+				94A6EB542B7AB35200B66C82 /* RegisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				94A6EB402B792A0C00B66C82 /* LoginModel.swift */,
+				94A6EB5B2B7ABC3E00B66C82 /* RegisterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,6 +353,31 @@
 				94A6EB432B792A7200B66C82 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94A6EB562B7AB94D00B66C82 /* InputFields */ = {
+			isa = PBXGroup;
+			children = (
+				94A6EB572B7AB96E00B66C82 /* InputTextView.swift */,
+				94A6EB592B7ABB8D00B66C82 /* SecureInputTextView.swift */,
+			);
+			path = InputFields;
+			sourceTree = "<group>";
+		};
+		94A6EB5D2B7AC27500B66C82 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				94A6EB5E2B7AC27C00B66C82 /* Model */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		94A6EB5E2B7AC27C00B66C82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94A6EB5F2B7AC28C00B66C82 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +406,7 @@
 				9476A8B72B7928B3008452AD /* Kingfisher */,
 				94A6EB482B793EF900B66C82 /* FirebaseAnalyticsSwift */,
 				94A6EB4A2B793EF900B66C82 /* FirebaseFirestoreSwift */,
+				94A6EB612B7AC40F00B66C82 /* FirebaseFirestoreCombine-Community */,
 			);
 			productName = "Tekno Stilim";
 			productReference = 9476A84D2B79161E008452AD /* Tekno Stilim.app */;
@@ -488,13 +530,18 @@
 			files = (
 				9476A8932B791814008452AD /* DummyData.swift in Sources */,
 				94A6EB412B792A0C00B66C82 /* LoginModel.swift in Sources */,
+				94A6EB582B7AB96E00B66C82 /* InputTextView.swift in Sources */,
 				9476A8A12B791C5E008452AD /* HomeView.swift in Sources */,
 				9476A8512B79161E008452AD /* Tekno_StilimApp.swift in Sources */,
 				9476A8962B791929008452AD /* BaseModel.swift in Sources */,
 				9476A8B22B791D45008452AD /* ProductView.swift in Sources */,
+				94A6EB5A2B7ABB8D00B66C82 /* SecureInputTextView.swift in Sources */,
+				94A6EB5C2B7ABC3E00B66C82 /* RegisterModel.swift in Sources */,
 				94A6EB532B7A5CDB00B66C82 /* PublicVariables.swift in Sources */,
+				94A6EB602B7AC28C00B66C82 /* UserModel.swift in Sources */,
 				9476A8AC2B791CFA008452AD /* ProductModel.swift in Sources */,
 				9476A89A2B791AA7008452AD /* TabBarView.swift in Sources */,
+				94A6EB552B7AB35200B66C82 /* RegisterView.swift in Sources */,
 				94A6EB442B792A7200B66C82 /* AuthViewModel.swift in Sources */,
 				9476A8B02B791D30008452AD /* ProductViewModel.swift in Sources */,
 				9476A8562B79161E008452AD /* Tekno_Stilim.xcdatamodeld in Sources */,
@@ -684,7 +731,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.efestech.Tekno-Stilim";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -722,7 +771,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.efestech.Tekno-Stilim";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -932,6 +983,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		94A6EB612B7AC40F00B66C82 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9476A8802B79172F008452AD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
 		};
 /* End XCSwiftPackageProductDependency section */
 
