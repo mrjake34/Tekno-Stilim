@@ -11,8 +11,8 @@ import Alamofire
 protocol IProductService {
 	func fetchProducts() async -> BaseResponseModel<Products>?
 }
-
-class ProductService: IProductService {
+@MainActor
+final class ProductService: IProductService {
     private var baseUrl = "https://gist.githubusercontent.com/mrjake34/0a8c6795bda1e5feebab02ea8fc56db3/raw/a2a847d319153359626aca252f90cc754b354f5a/gistfile1.txt"
     
     private var serviceManager: IServiceManager?
@@ -20,7 +20,7 @@ class ProductService: IProductService {
     init() {
         self.serviceManager = ServiceManager()
     }
-    
+	@MainActor
 	func fetchProducts() async -> BaseResponseModel<Products>? {
 		return await serviceManager?.request(baseUrl: baseUrl, model: Products.self)
     }

@@ -1,13 +1,14 @@
-//
-//  ProductViewModel.swift
-//  Tekno Stilim
-//
-//  Created by Alkan Ataş on 29.01.2024.
-//
+	//
+	//  ProductViewModel.swift
+	//  Tekno Stilim
+	//
+	//  Created by Alkan Ataş on 29.01.2024.
+	//
 
 import SwiftUI
 import Combine
 
+@MainActor
 final class ProductViewModel: ObservableObject {
 	@Published var data: Products?
 	@Published var errorMessage: String?
@@ -15,13 +16,14 @@ final class ProductViewModel: ObservableObject {
 	private let service: IProductService
 	
 	init(service: IProductService) {
-        self.service = service
+		
+		self.service = service
 		Task {
-			await setProducts()
+			await self.setProducts()
 		}
-    }
-	
-	fileprivate func setProducts() async -> Void {
+	}
+	func setProducts() async -> Void {
+		
 		let response = await service.fetchProducts()
 		
 		guard let rsp = response else {
@@ -29,10 +31,14 @@ final class ProductViewModel: ObservableObject {
 		}
 		
 		guard let data = rsp.data else {
-			self.errorMessage = response?.error
+			DispatchQueue.main.async {
+				self.errorMessage = response?.error
+			}
 			return
 		}
-		self.data = data
+		DispatchQueue.main.async {
+			self.data = data
+		}
 	}
 }
 

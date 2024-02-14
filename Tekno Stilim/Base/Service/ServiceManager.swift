@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-internal protocol IServiceManager {
+protocol IServiceManager {
 	func request<T: BaseModel>(baseUrl: String, model: T.Type) async -> BaseResponseModel<T>
 }
 
