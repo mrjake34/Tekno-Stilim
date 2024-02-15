@@ -45,6 +45,7 @@ struct RegisterForm: View {
 	@State private var password = ""
 	@State private var passwordAgain = ""
 	@EnvironmentObject var viewModel: AuthViewModel
+	@StateObject private var viewModel: AuthViewModel = AuthViewModel()
 	var body: some View {
 		VStack {
 			Spacer()
@@ -62,6 +63,10 @@ struct RegisterForm: View {
 			}, label: {
 				Text("Register")
 			})
+			if let message = viewModel.errorMessage {
+				Text(message)
+			}
+			Spacer()
 			Spacer()
 			NavigationLink("Do you have an account?") {
 				LoginView()

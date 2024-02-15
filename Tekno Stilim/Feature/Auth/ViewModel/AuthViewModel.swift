@@ -29,6 +29,10 @@ final class AuthViewModel: ObservableObject {
 		}
 	}
 	
+    @Published var loginError: LoginError?
+	@Published var user: FirebaseAuth.User?
+	@Published var errorMessage: String?
+	@Published var registerError: RegisterError?
 	@MainActor
 	func login(loginModel: LoginModel?) async {
 		self.authStatus = .loading
@@ -128,6 +132,43 @@ final class AuthViewModel: ObservableObject {
 			self.userModel = nil
 		} catch {
 			self.errorMessage = error.localizedDescription
+		}
+    }
+	@MainActor
+	func register(registerModel: RegisterModel?) async {
+		guard let model = registerModel else {
+			self.registerError = .requiredData
+			return
+		}
+		guard let fullName = model.fullName else {
+			self.registerError = .requiredFullName
+			return
+		}
+		guard let email = model.email else {
+			self.registerError = .requiredEmail
+			return
+		}
+		guard let password = model.password else {
+			self.registerError = .requiredPassword
+			return
+		}
+		if model.password != model.passwordAgain {
+			self.registerError = .passwordNotMatch
+			return
+		}
+		do {
+			let response = try await Auth.auth().createUser(withEmail: email, password: password)
+			self.user = response.user
+			let user = UserModel(id: response.user.uid, fullName: fullName, email: email)
+			let encodedUserModel = try Firestore.Encoder().encode(user)
+			guard let uid = user.id else {
+				self.registerError = .unknownError
+				return
+			}
+			try await Firestore.firestore().collection("users").document(uid).setData(encodedUserModel)
+		}catch {
+			self.errorMessage = error.localizedDescription
+			return
 		}
 	}
 }
