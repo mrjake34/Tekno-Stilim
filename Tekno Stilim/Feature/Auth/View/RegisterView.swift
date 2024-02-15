@@ -44,13 +44,13 @@ struct RegisterForm: View {
 	@State private var email = ""
 	@State private var password = ""
 	@State private var passwordAgain = ""
+	@EnvironmentObject var viewModel: AuthViewModel
 	@StateObject private var viewModel: AuthViewModel = AuthViewModel()
 	var body: some View {
 		VStack {
 			Spacer()
 			VStack(alignment: .leading){
 				InputTextView(title: "Name", label: "Please Enter Your Name", text: $fullName)
-				
 				InputTextView(title: "Email", label: "Please Enter Your Email", text: $email)
 				SecureInputTextView(title: "Password", label: "Please Enter Your Password", text: $password)
 				SecureInputTextView(title: "Confirm Password", label: "Please Enter Your Confirm Password", text: $passwordAgain)
@@ -71,6 +71,7 @@ struct RegisterForm: View {
 			NavigationLink("Do you have an account?") {
 				LoginView()
 			}
+			Spacer()
 		}
 		
 	}

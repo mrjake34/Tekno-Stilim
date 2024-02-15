@@ -40,13 +40,12 @@ struct DetailView: View {
 	var product: Product
 	var body: some View {
 		VStack {
-			ContentView(product: product)
+			ProductContentView(product: product)
 			HStack(content: {
 				Button {
 					print("Add To Card")
 				} label: {
 					Text("Add To Card")
-						.foregroundColor(.black)
 				}
 				Spacer()
 				Button {
@@ -67,7 +66,7 @@ struct DetailView: View {
 	}
 }
 
-struct ContentView: View {
+struct ProductContentView: View {
 	var product: Product
 	var body: some View {
 		ScrollView {

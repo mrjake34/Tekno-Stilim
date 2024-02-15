@@ -11,4 +11,13 @@ struct UserModel: Codable {
 	let id: String?
 	let fullName: String?
 	let email: String?
+	
+	var initials: String {
+		let formatter = PersonNameComponentsFormatter()
+		if let component = formatter.personNameComponents(from: fullName ?? "") {
+			formatter.style = .abbreviated
+			return formatter.string(from: component)
+		}
+		return ""
+	}
 }
