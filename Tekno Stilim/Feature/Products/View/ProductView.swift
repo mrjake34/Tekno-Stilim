@@ -13,7 +13,7 @@ struct ProductView: View {
 		NavigationView(content: {
 			VStack {
 				ProductList()
-			}.navigationTitle("Products")
+			}.navigationTitle(LocalizedStringKey("products"))
 				.navigationBarTitleDisplayMode(.inline)
 		})
 		
@@ -81,7 +81,6 @@ struct ProductList: View {
 				}
 			}
 			.padding(.horizontal, 10.0)
-			.navigationTitle("Products")
 		}else{
 			Spacer()
 			ProgressView()

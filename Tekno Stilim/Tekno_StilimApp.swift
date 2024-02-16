@@ -22,6 +22,7 @@ struct Tekno_StilimApp: App {
     var body: some Scene {
         WindowGroup {
             TabBarView()
+				
         }
     }
 }
