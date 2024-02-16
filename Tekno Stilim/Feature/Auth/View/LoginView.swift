@@ -16,32 +16,27 @@ struct LoginView: View {
 			content: {
 			VStack(alignment: .center, content: {
 				Spacer()
-				ZStack {
-					Image("logo")
-						.resizable()
-						.aspectRatio(contentMode: .fill)
-						.frame(width: 150, height: 150)
-					Circle()
-						.stroke(.white,lineWidth: 4)
-						.shadow(radius: 4)
-						.frame(width: 180, height: 180)
-				}
+				Image("logo")
+					.resizable()
+					.frame(width: 150, height: 150)
+					.aspectRatio(contentMode: .fill)
+					.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
 				VStack(content: {
-					TextField("Email", text: $email)
+					TextField(LocalizedStringKey("email"), text: $email)
 						.padding(.all, 10.0)
 						
-					SecureField("Password", text: $password)
+					SecureField(LocalizedStringKey("password"), text: $password)
 						.padding(.all, 10.0)
 					Button {
 						Task {
 							await authViewModel.login(loginModel: LoginModel(email: email, password: password))
 						}
 					} label: {
-						Text("Login")
+						Text(LocalizedStringKey("login"))
 					}
 				}).padding(20)
 				Spacer()
-				NavigationLink("Do you have not an account?") {
+				NavigationLink(LocalizedStringKey("doYouHaveNotAnAccount")) {
 					RegisterView()
 				}
 				Spacer()

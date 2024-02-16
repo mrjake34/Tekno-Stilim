@@ -14,10 +14,10 @@ struct InputTextView: View {
 	
     var body: some View {
 		VStack(alignment: .leading ,content: {
-			Text(title)
+			Text(LocalizedStringKey(title))
 				.font(.title3)
 			TextField(text: text) {
-				Text(label)
+				Text(LocalizedStringKey(label))
 			}
 			Divider()
 		})

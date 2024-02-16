@@ -8,22 +8,16 @@
 import SwiftUI
 
 struct ProfileView: View {
-	@EnvironmentObject private var authViewModel: AuthViewModel
+	@EnvironmentObject var authViewModel: AuthViewModel
 	var body: some View {
 		Group {
-			if authViewModel.userModel != nil {
-				ProfileBody(
-					user: authViewModel.userModel!
-				)
+			if let user = authViewModel.userModel {
+				ProfileBody(user: user)
 			}else {
 				LoginView()
 			}
 		}
 	}
-}
-
-#Preview {
-    ProfileView()
 }
 
 struct ProfileBody: View {
@@ -46,49 +40,50 @@ struct ProfileBody: View {
 							.foregroundColor(.gray)
 					}
 				}
-				Section("Account") {
+				Section(LocalizedStringKey("account")) {
 					Button(action: {}, label: {
 						HStack {
 							Image(systemName: "list.clipboard")
-							Text("My Orders")
+							Text(LocalizedStringKey("wyOrders"))
 						}
 					})
 					Button(action: {}, label: {
 						HStack {
 							Image(systemName: "creditcard")
-							Text("My Cards")
+							Text(LocalizedStringKey("myCards"))
 						}
 					})
 					Button(action: {}, label: {
 						HStack {
 							Image(systemName: "building")
-							Text("My Address")
+							Text(LocalizedStringKey("myAddress"))
 						}
 					})
 					Button(action: {}, label: {
 						HStack {
 							Image(systemName: "doc")
-							Text("User Agreement")
+							Text(LocalizedStringKey("userAgreement"))
 						}
 					})
 					
 				}
-				Section("Setting") {
+				Section(LocalizedStringKey("setting")) {
 					ThemeChangerView()
+					ChangeLangView()
 				}
 				LogoutButtonView()
 				Section {
 					Button(action: {}, label: {
 						HStack {
 							Image(systemName: "icloud.and.arrow.down")
-							Text("Download Data")
+							Text(LocalizedStringKey("downloadData"))
 						}
 					})
 					Button(action: {}, label: {
 						HStack {
 							Image(systemName: "trash")
 								.foregroundColor(.red)
-							Text("Delete Account")
+							Text(LocalizedStringKey("deleteAccount"))
 								.foregroundColor(.red)
 						}
 					})
@@ -107,11 +102,16 @@ struct LogoutButtonView: View {
 			}, label: {
 				HStack {
 					Image(systemName: "rectangle.portrait.and.arrow.right")
-					Text("Logout")
+					Text("logout")
 				}
 			})
 		}
 	}
 }
 
+
+#Preview {
+	ProfileView()
+		.environmentObject(AuthViewModel())
+}
 

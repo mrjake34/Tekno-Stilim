@@ -21,14 +21,15 @@ struct TabBarView: View {
 
 struct TabBar: View {
 	@State private var pageIndex: Int = 0
-	@StateObject var authViewModel = AuthViewModel()
+	@StateObject var authViewModel: AuthViewModel = AuthViewModel()
+	@StateObject var changeLanguageViewModel: ChangeLangViewModel = ChangeLangViewModel()
 	var body: some View {
 		TabView(selection: $pageIndex,
 				content:  {
 			HomeView().tabItem {
 				ZStack {
 					Image(systemName: "house")
-					Text("Home")
+					Text(LocalizedStringKey("home"))
 				}
 				
 			}
@@ -39,33 +40,40 @@ struct TabBar: View {
 			ProductList().tabItem {
 				VStack {
 					Image(systemName: "shippingbox")
-					Text("Products")
+					Text(LocalizedStringKey("products"))
 				}}
 			.onAppear {
 				pageIndex = 2
 			}
 			.tag(2)
-			Text("Cart").tabItem {
+			Text("cart").tabItem {
 				VStack {
 					Image(systemName: "cart")
-					Text("Cart")
+					Text(LocalizedStringKey("cart"))
 				}
 			}
 			.onAppear {
 				pageIndex = 3
 			}
 			.tag(3)
-			ProfileView()
-				.tabItem {
-					VStack {
-						Image(systemName: "person")
-						Text("Profile")
+			Group {
+				ProfileView()
+					.tabItem {
+						VStack {
+							Image(systemName: "person")
+							Text(LocalizedStringKey("profile"))
+						}
 					}
-				}
-				.onAppear {
-					pageIndex = 4
-				}
-				.tag(4)
-		}).environmentObject(authViewModel)
+					.onAppear {
+						pageIndex = 4
+					}
+					.tag(4)
+			}
+		})
+		.environmentObject(authViewModel)
+		.environmentObject(changeLanguageViewModel)
+		.environment(\.locale, .init(identifier: changeLanguageViewModel.currentLanguage?.identifier ?? ""))
+		
+		
 	}
 }

@@ -45,14 +45,14 @@ struct DetailView: View {
 				Button {
 					print("Add To Card")
 				} label: {
-					Text("Add To Card")
+					Text(LocalizedStringKey("addToCard"))
 				}
 				Spacer()
 				Button {
 					print("Buy Now")
 				} label: {
 					HStack {
-						Text("Buy Now")
+						Text(LocalizedStringKey("buyNow"))
 							.foregroundColor(.white)
 							.frame(width: UIScreen.main.bounds.width / 3, height: 45)
 					}
@@ -106,7 +106,7 @@ struct ProductContentView: View {
 							.foregroundColor(.white)
 					}
 				}
-				Text("Description")
+				Text(LocalizedStringKey("description"))
 					.padding(.vertical, 3.0)
 					.font(.title3)
 					.fontWeight(.semibold)
@@ -135,7 +135,7 @@ struct ProductContentView: View {
 							
 						}
 					} header: {
-						Text("Comments")
+						Text(LocalizedStringKey("comments"))
 							.font(.title3)
 							.fontWeight(.semibold)
 					}

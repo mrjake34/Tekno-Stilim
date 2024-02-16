@@ -13,7 +13,7 @@ struct RegisterView: View {
 			HeadTitle()
 			RegisterForm()
 		})
-		.navigationTitle("Register")
+		.navigationTitle(LocalizedStringKey("register"))
 		.navigationBarTitleDisplayMode(.inline)
 		.padding(.all)
 	}
@@ -28,8 +28,8 @@ struct HeadTitle: View {
 	var body: some View {
 		HStack {
 			VStack(alignment: .leading,content: {
-				Text("Create")
-				Text("Account")
+				Text(LocalizedStringKey("create"))
+				Text(LocalizedStringKey("account"))
 			})
 			.font(.largeTitle)
 			.fontWeight(.semibold)
@@ -49,10 +49,10 @@ struct RegisterForm: View {
 		VStack {
 			Spacer()
 			VStack(alignment: .leading){
-				InputTextView(title: "Name", label: "Please Enter Your Name", text: $fullName)
-				InputTextView(title: "Email", label: "Please Enter Your Email", text: $email)
-				SecureInputTextView(title: "Password", label: "Please Enter Your Password", text: $password)
-				SecureInputTextView(title: "Confirm Password", label: "Please Enter Your Confirm Password", text: $passwordAgain)
+				InputTextView(title: "name", label: "enterYourName", text: $fullName)
+				InputTextView(title: "email", label: "enterYourEmail", text: $email)
+				SecureInputTextView(title: "password", label: "enterYourPassword", text: $password)
+				SecureInputTextView(title: "confirmPassword", label: "enterYourPassword", text: $passwordAgain)
 			}
 			.padding(.all)
 			Button(action: {
@@ -60,10 +60,10 @@ struct RegisterForm: View {
 					await viewModel.register(registerModel: RegisterModel(fullName: fullName, email: email, password: password, passwordAgain: passwordAgain))
 				}
 			}, label: {
-				Text("Register")
+				Text(LocalizedStringKey("register"))
 			})
 			Spacer()
-			NavigationLink("Do you have an account?") {
+			NavigationLink(LocalizedStringKey("doYouHaveAnAccount")) {
 				LoginView()
 			}
 			Spacer()
