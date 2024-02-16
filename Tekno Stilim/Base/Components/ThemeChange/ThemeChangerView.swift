@@ -13,7 +13,7 @@ struct ThemeChangerView: View {
 	@Environment(\.calendar) var environment: Calendar
 	@StateObject var viewModel = ThemeChangerViewModel()
     var body: some View {
-		Toggle("Dark Mode:",isOn: $isDark).onChange(of: isDark) {
+		Toggle(LocalizedStringKey("darkMode"),isOn: $isDark).onChange(of: isDark) {
 			if colorScheme == .light {
 				print(colorScheme)
 				print(environment)

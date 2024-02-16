@@ -22,7 +22,6 @@ struct TabBarView: View {
 struct TabBar: View {
 	@State private var pageIndex: Int = 0
 	@StateObject var authViewModel: AuthViewModel = AuthViewModel()
-	@StateObject var changeLanguageViewModel: ChangeLangViewModel = ChangeLangViewModel()
 	var body: some View {
 		TabView(selection: $pageIndex,
 				content:  {
@@ -71,9 +70,5 @@ struct TabBar: View {
 			}
 		})
 		.environmentObject(authViewModel)
-		.environmentObject(changeLanguageViewModel)
-		.environment(\.locale, .init(identifier: changeLanguageViewModel.currentLanguage?.identifier ?? ""))
-		
-		
 	}
 }

@@ -44,7 +44,7 @@ struct ProfileBody: View {
 					Button(action: {}, label: {
 						HStack {
 							Image(systemName: "list.clipboard")
-							Text(LocalizedStringKey("wyOrders"))
+							Text(LocalizedStringKey("myOrders"))
 						}
 					})
 					Button(action: {}, label: {
@@ -102,7 +102,7 @@ struct LogoutButtonView: View {
 			}, label: {
 				HStack {
 					Image(systemName: "rectangle.portrait.and.arrow.right")
-					Text("logout")
+					Text(LocalizedStringKey("logout"))
 				}
 			})
 		}

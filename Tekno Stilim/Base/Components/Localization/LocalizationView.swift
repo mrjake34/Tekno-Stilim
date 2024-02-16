@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ChangeLangView: View {
+struct LocalizationView: View {
 	@Environment(\.locale) var locale: Locale
-	@EnvironmentObject var viewModel: ChangeLangViewModel
+	@EnvironmentObject var viewModel: LocalizationViewModel
     var body: some View {
 		HStack(spacing: 0) {
 			Text(LocalizedStringKey("language"))
 			Text(":")
 			Spacer()
-			Menu(LocalizedStringKey(ChangeLangExtension.getCountry(value: locale.identifier))) {
+			Menu(LocalizedStringKey(LocalizationExtension.getCountry(value: locale.identifier))) {
 				Button(LocalizedStringKey("turkish")) {
 					viewModel.changeLanguage(locale: Locale(identifier: "tr_TR"))
 				}
@@ -30,5 +30,5 @@ struct ChangeLangView: View {
 }
 
 #Preview {
-    ChangeLangView()
+    LocalizationView()
 }
