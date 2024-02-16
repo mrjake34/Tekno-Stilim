@@ -19,9 +19,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct Tekno_StilimApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+	@StateObject var localizationViewModel: LocalizationViewModel = LocalizationViewModel()
     var body: some Scene {
         WindowGroup {
             TabBarView()
+				.environmentObject(localizationViewModel)
+				.environment(\.locale, .init(identifier: localizationViewModel.currentLanguage?.identifier ?? ""))
 				
         }
     }

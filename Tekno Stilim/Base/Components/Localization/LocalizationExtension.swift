@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ChangeLangExtension {
+final class LocalizationExtension {
 	static func getCountry(value: String) -> String {
 		switch value {
 			case "tr_TR":

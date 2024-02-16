@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ChangeLangViewModel: ObservableObject {
+final class LocalizationViewModel: ObservableObject {
 	@Published var currentLanguage: Locale?
 	@Published var locale: Locale?
 

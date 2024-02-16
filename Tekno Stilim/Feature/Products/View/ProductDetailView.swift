@@ -45,7 +45,7 @@ struct DetailView: View {
 				Button {
 					print("Add To Card")
 				} label: {
-					Text(LocalizedStringKey("addToCard"))
+					Text(LocalizedStringKey("addToCart"))
 				}
 				Spacer()
 				Button {

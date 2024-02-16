@@ -53,7 +53,7 @@ struct RegisterForm: View {
 				InputTextView(title: "name", label: "enterYourName", text: $fullName)
 				InputTextView(title: "email", label: "enterYourEmail", text: $email)
 				SecureInputTextView(title: "password", label: "enterYourPassword", text: $password)
-				SecureInputTextView(title: "confirmPassword", label: "enterYourPassword", text: $passwordAgain)
+				SecureInputTextView(title: "confirmPassword", label: "enterYourConfirmPassword", text: $passwordAgain)
 			}
 			.padding(.all)
 			Button(action: {
